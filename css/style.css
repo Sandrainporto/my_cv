@@ -1,0 +1,267 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	min-height: 100vh;
+	font-family: "Frank Ruhl Libre", serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+.wrapper {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: minmax(70px, auto) 1fr minmax(70px, auto);
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+}
+[class*="__container"] {
+	max-width: 1400px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+/*=====================*/
+.header {
+	background: rgb(106, 60, 60);
+	grid-area: header;
+	padding: 15px 30px;
+
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid rgb(213, 171, 44);
+	border-radius: 30px;
+	padding: 15px;
+}
+.header__logo {
+	width: 50px;
+	height: 50px;
+	background: white;
+	border-radius: 50%;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+	display: flex;
+	gap: 45px;
+}
+.menu__list li {
+}
+.menu__link {
+	color: antiquewhite;
+	font-weight: 500;
+}
+/*=====================*/
+.main {
+	background: rgb(188, 197, 187);
+	padding: 15px;
+	grid-area: main;
+}
+.main__container {
+}
+
+section {
+	padding: 30px;
+	border: 1px solid #000;
+	border-radius: 30px;
+}
+.Profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 40px;
+}
+.profile__photo {
+	width: 250px;
+	height: 250px;
+	position: relative;
+}
+.profile__photo img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.profile__description {
+	display: flex;
+	gap: 40px;
+	font-family: "Poppins", sans-serif;
+}
+.description {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+}
+.description__greeting {
+	text-align: center;
+	font-size: 45px;
+	font-weight: 500;
+}
+.description__name {
+	font-weight: 700;
+	color: azure;
+}
+.description__name_visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.description__job-title {
+	font-weight: 700;
+	font-size: 65px;
+}
+
+.profile__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.btn {
+	font-size: 24px;
+	line-height: 1.2 ;
+	font-weight: 500;
+	padding: 10px 15px;
+	border: 3px solid rgb(198, 74, 165);
+	border-radius: 50px;
+
+}
+.profile__buttons_email {
+	background-color: cornflowerblue;
+	color: azure;
+}
+
+.profile__buttons_download {
+}
+.profile__message {
+	max-width: 1200px;
+	font-size: 28px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1.2;
+}
+/*=====================*/
+.projects {
+}
+.projects__container {
+}
+.projects__list {
+}
+.projects__item {
+}
+.projects__image {
+	width: 400px;
+	height: 300px;
+	position: relative;
+}
+.projects__image img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.projects__title {
+}
+.projects__description {
+}
+
+
+
+.footer {
+	background: rgb(145, 143, 36);
+	grid-area: footer;
+	padding: 15px;
+	display: grid;
+	grid-template: 1fr / 1fr minmax(100px, 300px) minmax(500px, 1100px) 1fr;
+	align-items: center;
+}
