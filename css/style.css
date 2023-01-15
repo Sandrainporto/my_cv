@@ -1,4 +1,4 @@
-@import "/css/normalize.css";
+@import "./css/normalize.css";
 
 :root{
 	--bg:#1a7b5d;
@@ -308,7 +308,7 @@ order: 2;
 	padding-top: 10px;
 	border: 1px solid #000;
 	width: 610px;
-	height: 600px;
+	height: 300px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
