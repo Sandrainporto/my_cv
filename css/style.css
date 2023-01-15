@@ -9,6 +9,7 @@
 
 html {
 	scroll-behavior: smooth;
+	
 }
 body {
 	font-family: "Poppins", sans-serif;
@@ -19,6 +20,7 @@ body {
 
 .wrapper {
 	min-height: 100vh;
+	overflow: hidden;
 	display: grid;
 	grid-template-rows: minmax(70px, auto) 1fr minmax(70px, auto);
 	grid-template-columns: 1fr;
@@ -186,11 +188,7 @@ border-radius: 38%;
 .projects {
 	background: var(--white);
 }
-.projects__container {
-}
-.projects__recent{
 
-}
 .section__title{
 	color: var(--bg);
 	font-weight: 700;
@@ -205,7 +203,7 @@ border-radius: 38%;
 
 
 .projects__list {  
-	max-width: 1300px;
+	max-width: 1200px;
 	margin: 20px auto 30px;
 	display: flex;
 	flex-wrap: nowrap;
