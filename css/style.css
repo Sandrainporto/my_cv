@@ -1,4 +1,4 @@
-@import "./css/normalize.css";
+@import "./normalize.css";
 
 :root{
 	--bg:#1a7b5d;
@@ -200,22 +200,23 @@ border-radius: 38%;
 
 /* карусель */
 
-
+.projects__controls button {
+	font-size: 30px;
+	border: 1px solid #000;
+}
 
 .projects__list {  
-	max-width: 1200px;
+	max-width: 1330px;
 	margin: 20px auto 30px;
 	display: flex;
 	flex-wrap: nowrap;
-	overflow: scroll;
-	padding: 30px 15px;
-	gap: 30px;
+	overflow: hidden;
+	padding: 30px 10px;
+	gap: 25px;
 	border: 1px solid #000;
 }
 /* картинка */
-.projects__controls {
-	
-}
+
 .projects__item {
 	background: #638e8a8c;
 	max-width: 420px;

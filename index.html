@@ -58,10 +58,6 @@
 				</section>
 				<section class="projects section__wrapper">
 						<h2 class="section__title title">Recent Projects</h2>
-						<div class="projects__controls">
-							<button id="prevBtn">назад</button>
-							<button id="nextBtn">вперед</button>
-						</div>
 						<div class="projects__list">
 							<a href="" class="projects__item">
 								<div class="projects__image">
@@ -101,7 +97,10 @@
 								<p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
 							</a>
 						</div>
-
+						<div class="projects__controls controls">
+							<button class="controls__btn" id="prevBtn" onclick="prev()">назад</button>
+							<button class="controls__btn" id="nextBtn" onclick="next()">вперед</button>
+						</div>
 				</section>
 				<section class="education section__wrapper">
 						<h2 class="section__title title">Education and courses</h2>
@@ -170,6 +169,7 @@
 
 
 	</div>
+	<script src="./js/slider.js"></script>
 </body>
 
 </html>
