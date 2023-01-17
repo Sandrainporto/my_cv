@@ -274,18 +274,22 @@ body {
 	color: var(--white);
 }
 
+
+
 .skills {
 	background: var(--white);
 }
 .skills__content {
 	padding: 30px;
 	display: grid;
-	grid-template-rows: 1fr;
+	grid-template-rows: minmax(50px auto) 1fr;
 	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: 
+	"title title"
+	"scheme description";
 }
 .skills__title-gen {
-	order: 2;
-	border: 1px solid #000;
+	grid-area: title;
 }
 .skills__box {
 	padding-top: 10px;
@@ -295,6 +299,8 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	grid-area: scheme;
+
 }
 .skills__item {
 	position: relative;
@@ -420,6 +426,9 @@ left: 27%;
 }
 .skills__item:nth-child(10):hover {
 	opacity: 1;
+}
+.skills__description{
+	grid-area: description;
 }
 
 .footer {
