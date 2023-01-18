@@ -4,6 +4,8 @@
 	--bg: #1a7b5d;
 	--primary: rgb(238, 225, 41);
 	--white: #f8f0e4;
+	--text-color: rgb(21, 24, 27);
+	
 }
 
 html {
@@ -15,7 +17,10 @@ body {
 	font-size: 20px;
 	color: var(--white);
 }
-
+.transition{
+	transition-duration: 0.5s;
+	color: var(--bg);
+}
 .wrapper {
 	min-height: 100vh;
 	overflow: hidden;
@@ -30,7 +35,7 @@ body {
 [class*="__container"] {
 	max-width: 1410px;
 	margin: 0px auto;
-	padding: 15px;
+	padding: 25px;
 }
 /*=====================*/
 .header {
@@ -429,6 +434,15 @@ left: 27%;
 }
 .skills__description{
 	grid-area: description;
+	border: 1px solid #000;
+padding: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: justify;
+
+gap: 15px;
+	color: #000;
 }
 
 .footer {
