@@ -29,125 +29,141 @@
 			</div>
 		</header>
 		<main class="main">
-			<div class="main__container">
-				<section class="profile section__wrapper">
-					<div class="profile__photo">
-						<img src="img/photo_cv.png" alt="photo_cv">
-					</div>
-					<div class="profile__description description">
-						<div class="description__greeting">Hello, I'm
-							<span class="description__name">Alexandra</span>
+			<section class="profile">
+				<div class="section__container">
+					<div class="profile__content">
+						<div class="profile__photo">
+							<img src="img/photo_cv.png" alt="photo_cv">
 						</div>
-						<h1 class="description__name_visually-hidden">
-							Alexandra Barmin - Junior Front-End Developer Resume
-						</h1>
-						<div class="description__job-title">Front-End Developer</div>
+						<div class="profile__description description">
+							<h1 class="description__name_visually-hidden">
+								Alexandra Barmin - Junior Front-End Developer Resume
+							</h1>
+							<div class="description__greeting">Hello, I'm
+								<span class="description__name">Alexandra</span>
+							</div>
+							<div class="description__job-title">Front-End Developer</div>
+						</div>
+						<div class="profile__buttons buttons">
+							<button class="buttons_email btn">Email me</button>
+							<button class="buttons_download btn">Download CV</button>
+						</div>
+						<div class="profile__message">
+							<p>Today I am on my way into the world of front-end development.</p>
+							<p>My youth and sense of purpose will help me to reach good results in these sphere.</p>
+							<p>Several month of self-education and creation of a few html and css constuctions loved me into
+								this
+								subject.</p>
+							<p>Nowadays my aim is to deeper the knowledge of this science, obtain experience in new
+								technologies
+								and methods of front-end
+								development, improve the skills necessary for successful subject proficiency...</p>
+						</div>
 					</div>
-					<div class="profile__buttons buttons">
-						<button class="buttons_email btn">Email me</button>
-						<button class="buttons_download btn">Download CV</button>
-					</div>
-					<div class="profile__message">
-						<p>Today I am on my way into the world of front-end development.</p>
-						<p>My youth and sense of purpose will help me to reach good results in these sphere.</p>
-						<p>Several month of self-education and creation of a few html and css constuctions loved me into this
-							subject.</p>
-						<p>Nowadays my aim is to deeper the knowledge of this science, obtain experience in new technologies
-							and methods of front-end
-							development, improve the skills necessary for successful subject proficiency...</p>
-					</div>
-				</section>
-				<!-- <section class="projects section__wrapper">
+				</div>
+			</section>
+			<section class="projects">
+				<div class="section__container">
+					<div class="projects__content">
 						<h2 class="section__title title">Recent Projects</h2>
-						<div class="projects__list">
-							<a href="" class="projects__item">
-								<div class="projects__image">
-									<img src="img/online-zoo.png" alt="online-zoo-project">
-								</div>
-								<div class="projects__title">Online Zoo</div>
-								<p class="projects__description">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
-							</a>
-							<a href="" class="projects__item">
-								<div class="projects__image">
-									<img src="img/momentum.png" alt="momentum">
-								</div>
-								<div class="projects__title">Momentum</div>
-								<p class="projects__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-							</a>
-							<a href="" class="projects__item">
-								<div class="projects__image">
-									<img src="img/travel.png" alt="travel-project">
-								</div>
-								<div class="projects__title">Travel</div>
-								<p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Quisquam, quos sequi modi, quidem aperiam veritatis quod sed porro omnis perspiciatis a eaque
-									alias beatae accusamus totam, voluptate placeat delectus sit!</p>
-							</a>
-							<a href="" class="projects__item">
-								<div class="projects__image">
-									<img src="img/cv-old.png" alt="cv-old-project">
-								</div>
-								<div class="projects__title">Old CV</div>
-								<p class="projects__description">Lorem ipsum dolor sit.</p>
-							</a>
-							<a href="" class="projects__item">
-								<div class="projects__image">
-									<img src="img/gem-puzzle.png" alt="gem-puzzle">
-								</div>
-								<div class="projects__title">Gem Puzzle 4x4</div>
-								<p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-							</a>
+						<div class="projects__carousel">
+							<button class="controls__btn" id="prevBtn" onclick="prev()">&#8592;</button>
+							<button class="controls__btn" id="nextBtn" onclick="next()">&#8594;</button>
+							<div class="projects__list">
+								<a href="" class="projects__item">
+									<div class="projects__image">
+										<img src="./img/projects/online-zoo.png" alt="online-zoo-project">
+									</div>
+									<div class="projects__title">Online Zoo</div>
+									<p class="projects__description">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+								</a>
+								<a href="" class="projects__item">
+									<div class="projects__image">
+										<img src="./img/projects/momentum.png" alt="momentum">
+									</div>
+									<div class="projects__title">Momentum</div>
+									<p class="projects__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									</p>
+								</a>
+								<a href="" class="projects__item">
+									<div class="projects__image">
+										<img src="./img/projects/travel.png" alt="travel-project">
+									</div>
+									<div class="projects__title">Travel</div>
+									<p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									</p>
+								</a>
+								<a href="" class="projects__item">
+									<div class="projects__image">
+										<img src="./img/projects/cv-old.png" alt="cv-old-project">
+									</div>
+									<div class="projects__title">Old CV</div>
+									<p class="projects__description">Lorem ipsum dolor sit.</p>
+								</a>
+								<a href="" class="projects__item">
+									<div class="projects__image">
+										<img src="./img/projects/gem-puzzle.png" alt="gem-puzzle">
+									</div>
+									<div class="projects__title">Gem Puzzle 4x4</div>
+									<p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+								</a>
+							</div>
 						</div>
-						<div class="projects__controls controls">
-							<button class="controls__btn" id="prevBtn" onclick="prev()">назад</button>
-							<button class="controls__btn" id="nextBtn" onclick="next()">вперед</button>
-						</div>
-				</section> -->
-				<section class="education section__wrapper">
-					<h2 class="section__title title">Education and courses</h2>
-					<ul class="education__list">
-						<li class="education__item">
-							<p class="education__year">September, 2022 - now</p>
-							<p class="education__status">Unfinished</p>
-							<h4 class="education__degree">JavaScript/Front-end Course(Stage1-2)</h4>
-							<p class="education__company">
-								<a target="_blank" href="https://rs.school/js/">The Rolling Scopes School</a>
+					</div>
+				</div>
+			</section>
+			<section class="education">
+				<div class="section__container">
+					<div class="education__content">
+						<h2 class="section__title title">Education and courses</h2>
+						<ul class="education__list">
+							<li class="education__item">
+								<p class="education__year">September, 2022 - now</p>
+								<p class="education__status">Unfinished</p>
+								<h4 class="education__degree">JavaScript/Front-end Course(Stage1-2)</h4>
+								<p class="education__company">
+									<a target="_blank" href="https://rs.school/js/">The Rolling Scopes School</a>
+								</p>
+							</li>
+							<li class="education__item">
+								<p class="education__year">June, 2022 - September, 2022</p>
+								<p class="education__status">Certificate</p>
+								<h4 class="education__degree">JavaScript/Front-end Course(Stage0)</h4>
+								<div class="education__company">
+									<a target="_blank" href="https://rs.school/js/">The Rolling Scopes School</a>
+								</div>
+							</li>
+							<li class="education__item">
+								<p class="education__year">September, 2016 - July, 2017</p>
+								<p class="education__status">Certificate</p>
+								<h4 class="education__degree">The French and English Languages</h4>
+								<div class="education__company">
+									<a target="_blank" href="https://www.up.pt">Universidade do Porto</a>
+								</div>
+							</li>
+							<li class="education__item">
+								<p class="education__year">2014 - 2019</p>
+								<p class="education__status">Specialist's degree </p>
+								<h4 class="education__degree">Romano-Germanic Philology</h4>
+								<div class="education__company">
+									<a target="_blank" href="https://msu.by/">Mogilev State A. Kuleshov University</a>
+								</div>
+							</li>
 							</p>
-						</li>
-						<li class="education__item">
-							<p class="education__year">June, 2022 - September, 2022</p>
-							<p class="education__status">Certificate</p>
-							<h4 class="education__degree">JavaScript/Front-end Course(Stage0)</h4>
-							<div class="education__company">
-								<a target="_blank" href="https://rs.school/js/">The Rolling Scopes School</a>
-							</div>
-						</li>
-						<li class="education__item">
-							<p class="education__year">September, 2016 - July, 2017</p>
-							<p class="education__status">Certificate</p>
-							<h4 class="education__degree">The French and English Languages</h4>
-							<div class="education__company">
-								<a target="_blank" href="https://www.up.pt">Universidade do Porto</a>
-							</div>
-						</li>
-						<li class="education__item">
-							<p class="education__year">2014 - 2019</p>
-							<p class="education__status">Specialist's degree </p>
-							<h4 class="education__degree">Romano-Germanic Philology</h4>
-							<div class="education__company">
-								<a target="_blank" href="https://msu.by/">Mogilev State A. Kuleshov University</a>
-							</div>
-						</li>
-				</section>
-				<section class="skills section__wrapper">
+							</p>
+			</section>
+			<section class="skills">
+				<div class="section__container">
 					<div class="skills__content">
 						<h2 class="skills__title-gen section__title">Obtained Skills</h2>
 						<div class="skills__description description">
 							<p class="description__item sass-desc">Lorem ipsum dolor sit amet.</p>
-							<p class="description__item html-desc">Lorem ipsum dolor siLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.t amet.</p>
+							<p class="description__item html-desc">Lorem ipsum dolor siLorem ipsum dolor sit amet.Lorem ipsum
+								dolor sit amet.t amet.</p>
 							<p class="description__item js-desc">Lorem ipsum dolor sit amet.</p>
 							<p class="description__item css-desc">Lorem ipsum dolor sit amet.</p>
-							<p class="description__item git-desc">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+							<p class="description__item git-desc">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem
+								ipsum dolor sit amet.</p>
 						</div>
 						<div class="skills__box">
 							<div class="skills__item hexagon"></div>
@@ -172,13 +188,9 @@
 							<div class="skills__item hexagon"></div>
 						</div>
 					</div>
-				</section>
-
+				</div>
+			</section>
 		</main>
-
-
-
-
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__content">
@@ -190,7 +202,6 @@
 					</div>
 					<div class="footer__links links">
 						<ul class="links__list">
-
 							<li class="list__item">
 								<a class="list__link" href="https://www.instagram.com/sandrainporto/">
 									<img class="list__image" src="./img/svg/instagram.svg" alt="instagram-svg">
@@ -211,10 +222,6 @@
 				</div>
 			</div>
 		</footer>
-
-
-
-
 	</div>
 	<script src="./js/slider.js"></script>
 </body>

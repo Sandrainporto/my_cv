@@ -1,14 +1,14 @@
-// const slider = document.querySelector(".projects__list");
-// const sliderItem = slider.children;
+const slider = document.querySelector(".projects__list");
+const sliderItem = slider.children;
 
 
-// function next() { 
-// 	slider.append(sliderItem[0]);
+function next() { 
+	slider.append(sliderItem[0]);
 
-// };
-// function prev() { 
-// 	slider.prepend(sliderItem[sliderItem.length-1]);
-// }
+};
+function prev() { 
+	slider.prepend(sliderItem[sliderItem.length-1]);
+}
 
 
 const sassHover = document.querySelector(".skills__item_sass");
