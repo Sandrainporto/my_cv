@@ -14,7 +14,7 @@ html {
 body {
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 18px;
 	color: var(--white);
 	background: url("../img/backgrounds/dark-bg.png");
 }
@@ -496,7 +496,8 @@ body {
 .footer__dedication {
 }
 .footer__dedication img {
-	margin-top: -17px;
+	width: 140px;
+	margin-top: -14px;
 	margin-left: 5px;
 }
 .footer__dedication img:hover {
@@ -700,6 +701,7 @@ body {
 
 /*Tablet*/
 @media (max-width: 990.98px) {
+
 	.skills__content {
 		display: grid;
 		grid-template-rows: minmax(50px, auto) repeat(2, 1fr);
@@ -732,16 +734,78 @@ body {
 		font-weight: 700;
 	}
 	.education__status {
-		font-size: 18px;
 		font-weight: 300;
 	}
 	.education__degree {
 		font-weight: 700;
 	}
 	.education__company a {
-		font-size: 18px;
 		text-decoration: underline;
 	}
+	.footer {
+		font-size: 18px;
+	}
+	.footer__container {
+		
+	}
+	.footer__content {
+		display: grid;
+		grid-template-rows:  repeat(3, 1fr);
+		grid-template-columns: 1fr;
+		gap: 5px;
+		align-items: center;
+		justify-items: center;
+		grid-template-areas: 
+		"links"
+		"dedication"
+		"data";
+	}
+	.footer__dedication {
+		grid-area: dedication;
+		margin-top: 25px;
+	}
+	.footer__dedication img {
+
+		width: 120px;
+		margin-top: -14px;
+		margin-left: 5px;
+	}
+	.footer__dedication img:hover {
+		transition-duration: 0.6s;
+		transform: scale(1.1);
+	}
+	.footer__data {
+		grid-area: data;
+		text-align: center;
+	}
+	.footer__links {
+		align-items: center;
+	}
+	.links {
+	}
+	.links__list {
+		grid-area: links;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		gap: 20px;
+		justify-content: center;
+
+
+	}
+	.list__item {
+	}
+	.list__link {
+	}
+	
+	.list__image {
+		--icon-size: 40px;
+		width: var(--icon-size);
+		height: var(--icon-size);
+		
+	}
+	
+
 }
 /*Mobile*/
 @media (max-width: 767.98px) {
