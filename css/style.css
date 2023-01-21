@@ -906,6 +906,17 @@ body {
 	}
 }
 @media (max-width: 585.98px) {
+	
+
+	/* картинка */
+	.projects__item {
+		max-width: 310px;
+		max-height: 550px;
+	}
+	.projects__image {
+		width: 290px;
+		height: 200px;
+	}
 	.skills__content{
 	display: grid;
 	grid-template-rows: 70px 1fr;
