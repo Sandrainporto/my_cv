@@ -116,20 +116,20 @@ body {
 .profile__description {
 	margin-top: 25px;
 	display: flex;
-	flex-wrap: nowrap;
+	justify-content: center;
+
+	flex-wrap: wrap;
 	flex-direction: column;
 	gap: 40px;
 }
 .description {
 }
 .description__greeting {
-	text-align: center;
 	font-size: 54px;
 	font-weight: 500;
+
 }
 .description__name {
-	font-weight: 700;
-	font-size: 57px;
 	color: var(--primary);
 }
 .description__name_visually-hidden {
@@ -142,12 +142,13 @@ body {
 
 .description__job-title {
 	font-weight: 700;
-	font-size: 70px;
+	font-size:calc(30px + 40 * (100vw / 1440));
 }
 
 .profile__buttons {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 30px;
 	margin: 40px 0px 20px 0px;
 }
@@ -812,6 +813,10 @@ body {
 	[class*="__container"] {
 		max-width: none;
 	}
+	.description__job-title {
+		font-weight: 700;
+		font-size: calc(30px + (40 + 40 * 0.7) * ((100vw - 320px) / 770));
+  }
 }
 @media (max-width: 645.98px) {
 	.skills__content{
@@ -910,11 +915,14 @@ body {
 
 	/* картинка */
 	.projects__item {
-		max-width: 310px;
+		max-width: 290px;
 		max-height: 550px;
 	}
+	.projects__list{
+		padding: 0px;
+	}
 	.projects__image {
-		width: 290px;
+		width: 270px;
 		height: 200px;
 	}
 	.skills__content{
@@ -931,6 +939,21 @@ body {
 	.skills__box {
 		display: none;
 		
+	}
+	.profile__description {
+		margin-top: 25px;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 40px;
+	}
+	.description {
+	}
+	.description__greeting {
+		font-size: 54px;
+		font-weight: 500;
+	text-align: left;
 	}
 
 }
