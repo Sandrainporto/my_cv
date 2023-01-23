@@ -48,11 +48,14 @@ body {
 /*=====================*/
 .header {
 	grid-area: header;
+
 }
 .header__container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+
 }
 .header__logo img {
 	width: 42px;
