@@ -599,12 +599,14 @@ padding: 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-gap: 15px;
+	gap: 15px;
 	
 }
 .facts__item {
 	font-size: calc(18px + 8 * (100vw / 1440));
 }
+.facts__item:hover {
+color: var(--text-color-add);}
 
 .footer {
 	/* background: rgb(145, 143, 36); */
