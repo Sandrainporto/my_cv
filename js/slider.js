@@ -1,4 +1,4 @@
-//бургер
+
 const burgerIcon = document.querySelector(".burger__icon");
 const burgerMenu = document.querySelector(".header__menu");
 const span = document.querySelector(".span");
@@ -23,18 +23,18 @@ event.target.className !== 'header__menu active') {
 })
 
 
-
 const slider = document.querySelector(".projects__list");
 const sliderItem = slider.children;
 
-
 function next() { 
 	slider.append(sliderItem[0]);
-
 };
 function prev() { 
 	slider.prepend(sliderItem[sliderItem.length-1]);
 }
+
+
+
 
 
 const sassHover = document.querySelector(".skills__item_sass");
