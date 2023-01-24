@@ -36,66 +36,28 @@ function prev() {
 
 
 
+const hexagones = document.querySelectorAll('[data-tab]');
+const descriptionsAll = document.querySelectorAll('[data-tab-content]')
 
-const sassHover = document.querySelector(".skills__item_sass");
-const sassText = document.querySelector(".sass-desc");
+hexagones.forEach(function (item) { 
+	item.addEventListener('mouseover', function () { 
+		descriptionsAll.forEach(function (item) { 
+			item.classList.remove("text-transition");
+		})
+		const description = document.querySelector('#' + this.dataset.tab);
+		description.classList.add("text-transition");
+	})
+})
 
-sassHover.addEventListener("mouseover", () => {
-	sassText.classList.add("text-transition");
-}
-);
-sassHover.addEventListener("mouseout", () => {
-	sassText.classList.remove("text-transition");
-}
-);
-
-const htmlHover = document.querySelector(".skills__item_html");
-const htmlText = document.querySelector(".html-desc");
-
-htmlHover.addEventListener("mouseover", () => {
-	htmlText.classList.add("text-transition");
-}
-);
-htmlHover.addEventListener("mouseout", () => {
-	htmlText.classList.remove("text-transition");
-}
-);
+hexagones.forEach(function (item) { 
+	item.addEventListener('mouseout', function () {
+		
+		const description = document.querySelector('#' + this.dataset.tab);
+		description.classList.remove("text-transition");
 	
-const cssHover = document.querySelector(".skills__item_css");
-const cssText = document.querySelector(".css-desc");
+	})
+})
 
-cssHover.addEventListener("mouseover", () => {
-	cssText.classList.add("text-transition");
-}
-);
-cssHover.addEventListener("mouseout", () => {
-	cssText.classList.remove("text-transition");
-}
-);
-	
-const jsHover = document.querySelector(".skills__item_js");
-const jsText = document.querySelector(".js-desc");
 
-jsHover.addEventListener("mouseover", () => {
-	jsText.classList.add("text-transition");
-}
-);
-jsHover.addEventListener("mouseout", () => {
-	jsText.classList.remove("text-transition");
-}
-);
-	
-const gitHover = document.querySelector(".skills__item_git");
-const gitText = document.querySelector(".git-desc");
-
-gitHover.addEventListener("mouseover", () => {
-	gitText.classList.add("text-transition");
-}
-);
-gitHover.addEventListener("mouseout", () => {
-	gitText.classList.remove("text-transition");
-}
-);
-	
 
 
