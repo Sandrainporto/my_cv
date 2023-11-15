@@ -1,7 +1,7 @@
 @import "./normalize.css";
 
 :root {
-	--main-color: #ecc9c7;
+	--main-color: #ebdbdbde;
 	--additional-color: #ffffff;
 	--third-color: #9e937f;
 	--bg-primary-color: var(--main-color);
